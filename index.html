@@ -1,20 +1,289 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
-            border: 2px solid gold;
-            color: #3f5e56de;
-            margin: 34px 50px 30px 40px;
-            padding: 30px 40px;
+        * {
+            margin: 0;
         }
 
+        .nav {
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            justify-content: space-evenly;
+            color: black;
+            margin-right: 0;
+            font-family: 'Courier New', Courier, monospace;
+            position: static;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+
+        #id {
+            margin-right: 700px;
+            color: black;
+            text-decoration: none;
+        }
+
+        #id2 {
+            color: black;
+            text-decoration: none;
+        }
+
+        #id1 {
+            color: black;
+            text-decoration: none;
+        }
+
+        #id3 {
+            color: black;
+            text-decoration: none;
+        }
+
+        .header {
+            overflow: hidden;
+        }
+
+        .footer {
+            padding-top: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+        }
+
+        .footer,
+        .content {
+
+            display: flex;
+        }
+
+        .heading {
+            width: 100vw;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .head {
+            margin: 40px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .para1 {
+            padding: 10px;
+            text-align: center;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        #p2 {
+            margin-top: 15px;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-family: 'Times New Roman';
+            letter-spacing: 3px;
+        }
+
+
+        .img3 {
+
+            display: flex;
+        }
+
+        .img3 {
+            /* padding: 20px;
+            margin-left: 400px; */
+            padding: 5px;
+            margin: 50px 20px 20px 50px;
+
+
+        }
+
+        .row-reverse,
+        .second {
+
+            width: 100%;
+            display: flex;
+
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse;
+
+        }
+
+        .second {
+            display: grid;
+            place-items: right;
+            margin-left: 20px;
+        }
+
+        h4 {
+            text-align: left;
+            font-family: 'Times New Roman';
+            margin-bottom: none;
+            letter-spacing: 2px;
+
+        }
+
+        p {
+            font-family: 'Times New Roman';
+
+        }
+
+        .menu {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+        }
+
+        .com {
+            margin-left: 20px;
+        }
+
+        .cls {
+            margin-top: 70px;
+            margin-left: 20px;
+            font-family: 'Times new Roman';
+        }
+
+        .cls1 {
+            margin-left: 20px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .cls2 {
+            margin-left: 20px;
+            font-size: 18px;
+            color: rgb(85, 85, 185);
+            margin-bottom: 10px;
+        }
+        .form{
+            padding: 20px;
+        }
+        .frm1{
+            padding: 10px;
+        }
+        .frm1 input,textarea{
+            padding: 10px;
+            height: 30px;
+            width: 100%;
+            border: none;
+            
+        }
+        .frm1 button{
+            padding: 7px;
+        }
+        /* .frm1 input:focus,
+        textarea:focus {
+            outline: none;
+        } */
     </style>
 </head>
+
 <body>
-     <h1>Hello World!</h1>
+    <div class="nav">
+        <a id="id" href="#">Gourmet au Catering</a>
+        <a id="id1" href>About</a>
+        <a id="id2" href>Menu</a>
+        <a id="id3" href>Contact</a>
+
+    </div>
+    <div class="header">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" width="1600px" height="800px" alt="">
+
+    </div>
+    <div class="footer">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" width="400px" height="500px" alt="">
+        <div class="heading">
+            <h1 class="head">About Catering</h1>
+            <p class="para1">Tradition since 1889</p>
+            <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
+                elit
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute
+                iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use
+                seasonal ingredients.</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo odit aut minus commodi quos
+                temporibus consequatur deserunt ratione? Adipisci ea quasi, magni nam sed praesentium a minima maiores
+                rem ab maxime iusto eum, unde veritatis deleniti tenetur asperiores laboriosam sunt sapiente ipsum
+                soluta cumque fugit. Praesentium a obcaecati tenetur voluptatum sed saepe, dolor aliquam ullam velit
+                laboriosam accusantium ex qui!</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row-reverse">
+
+        <img class="img3" src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+        <div class="second">
+            <h1 class="menu">Our Menu</h1>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+            <h4>Honey Almond Granola with Fruits</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quo.</p>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="con">
+        <h1 class="cls">Contact</h1>
+        <p class="cls1">We offer full-service catering for any event, large or small. We understand your needs and we
+            will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to
+            contact us.</p>
+        <h3 class="cls2">Catering Service, 42nd Living St, 43043 New York, NY</h3>
+        <p class="cls1">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send
+            us a message here:</p>
+
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="frm1">
+                <!-- <label for="">Name</label> -->
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="frm1">
+                <!-- <label for="">Name</label> -->
+                <input type="number" name="name" placeholder="How many Peopel">
+            </div>
+            <div class="frm1">
+               
+                <input type="datetime-local" name="date" placeholder="Date and Time" required="" value="2020-10-16T17:00">
+            </div>
+            <div class="frm1">
+               
+                <input type="text" name="massage" placeholder="Massage \ Special requirements" required="" >
+            </div>
+            <div class="frm1">
+                <button type="submit">SEND MASSAGE</button>
+            </div>
+            
+        </form>
+    </div>
+
 </body>
+
 </html>
